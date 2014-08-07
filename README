@@ -1,0 +1,65 @@
+NAME
+    Games::Word::Wordlist::KBBI - Wordlist from Kamus Besar Bahasa Indonesia
+    (Indonesian)
+
+VERSION
+    This document describes version 0.01 of Games::Word::Wordlist::KBBI
+    (from Perl distribution Games-Word-Wordlist-KBBI), released on
+    2014-08-07.
+
+SYNOPSIS
+      use Games::Word::Wordlist::KBBI;
+      my $wl = Games::Word::Wordlist::KBBI->new;
+      my $word = $wl->random_word;
+      print "We have a word." if $wl->is_word ($word);
+
+DESCRIPTION
+    "Games::Word::Wordlist::KBBI" subclasses Games::Word::Wordlist, giving
+    you a managable wordlist preloaded with the Indonesian words from Kamus
+    Besar Bahasa Indonesia (currently the third edition, 2001). It contains
+    entries from the dictionary minus ones that have non-alphanumeric
+    characters. There are capitalized words, acronyms, as well as
+    all-lowercase ones.
+
+    Some stats:
+
+     Number of words: 47380
+     Shortest word length: 1
+     Longest word length: 24
+     Average word length: 7.76 characters
+     Number of 5-letter words: 6799
+
+    Since "Games::Word::Wordlist" is subclassed, all its methods (except
+    "new") are available.
+
+    Kamus Besar Bahasa Indonesia is the definitive Indonesian dictionary,
+    published by Pusat Bahasa.
+
+SEE ALSO
+    Games::Word::Wordlist.
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/Games-Word-Wordlist-KBBI>.
+
+SOURCE
+    Source repository is at
+    <https://github.com/sharyanto/perl-Games-Word-Wordlist-KBBI>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=Games-Word-Wordlist-K
+    BBI>
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2014 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
